@@ -3,14 +3,12 @@ const mongoose = require('mongoose');
 const uri = require('./config/keys_dev').uri;
 const { MongoClient } = require('mongodb');
 
-// Connecting to mongoDB database (from the Atlas example)
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
+// Import Routes
+const users = require('./routes/api/users');
+const posts = require('./routes/api/posts');
+// const comments = require('./routes/api/comments');
 
+// App
 const app = express();
 
 // Allow for data to have body
@@ -24,6 +22,11 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 const port = 5000;
+
+// Use Routes
+app.use('/api/users', users);
+app.use('/api/posts', posts);
+// app.use('/api/comments', comments);
 
 // Make server start on this port (localhost/5000)
 app.listen(

@@ -1,0 +1,55 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    // border: 2px black solid;
+    text-align: center;
+    font-family: var(--open-sans-family);
+
+    &-twitter-icon {
+        font-size: 4rem;
+        color: var(--light-blue);
+        margin-top: 1.3em;
+    }
+
+    &-main-title {
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    &-secondary-title {
+        margin-top: -0.5em;
+        font-size: 1.5rem;
+        color: grey;
+    }
+    
+    &-btn {
+        width: 30%;
+        margin-top: 1.5em;
+        padding: 0.8em;
+        border-radius: 2.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: var(--default-btn-hover-transition);
+    }
+
+    &-register-button {
+        color: white;
+        background-color: var(--light-blue);
+        font-weight: bold;
+        border: none;
+
+        &:hover {
+            background-color: var(--darker-light-blue);
+        }
+    }
+
+    &-login-button {
+        background: transparent;
+        color: var(--light-blue);
+        border: 1px solid var(--light-blue);
+    }
+}

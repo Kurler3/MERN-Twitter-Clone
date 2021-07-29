@@ -20,8 +20,24 @@ const UserSchema = new Schema({
         type:String,
         required: true
     },
-    phone_number:{
-        type: Number,
-        required: true
-    }
+    // Array of ids of users that this user follows
+    following: [
+        {
+            type:String,
+            required:true
+        }
+    ],
+    // Array of ids of users that this user is followed by
+    followers: [
+        {
+            type:String,
+            required:true
+        }
+    ],
+    timestamp: {
+        type: Date,
+        default: Date.now
+    },
 });
+
+module.exports = User = mongoose.model('user', UserSchema);

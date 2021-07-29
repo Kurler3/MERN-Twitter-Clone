@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+.homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: var(--open-sans-family);
+}
+
+.homepage-twitter-icon {
+  font-size: 4rem;
+  color: var(--light-blue);
+  margin-top: 1.3em;
+}
+
+.homepage-main-title {
+  font-size: 3rem;
+  margin-top: 1em;
+}
+
+.homepage-secondary-title {
+  margin-top: -0.5em;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.homepage-btn {
+  width: 30%;
+  margin-top: 1.5em;
+  padding: 0.8em;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: var(--default-btn-hover-transition);
+  transition: var(--default-btn-hover-transition);
+}
+
+.homepage-register-button {
+  color: white;
+  background-color: var(--light-blue);
+  font-weight: bold;
+  border: none;
+}
+
+.homepage-register-button:hover {
+  background-color: var(--darker-light-blue);
+}
+
+.homepage-login-button {
+  background: transparent;
+  color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+}
+
+:root {
+  --light-blue:#00acee;
+  --darker-light-blue:#009BDE;
+  --open-sans-family: 'Open Sans', sans-serif;
+  --default-btn-hover-transition: 'all 1s ease-out';
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=App.css.map */
