@@ -62,11 +62,109 @@
   border: 1px solid var(--light-blue);
 }
 
+.homepage-login-button:hover {
+  background-color: #D0E8FF;
+}
+
+.login-page {
+  height: 100vh;
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--open-sans-family);
+}
+
+.login-page-twitter-icon {
+  color: var(--light-blue);
+  font-size: 2.5rem;
+  margin-top: 0.7em;
+}
+
+.login-page-main-title {
+  margin-top: 1em;
+}
+
+.login-page-form {
+  margin-top: 0.5em;
+  padding: 1em 0;
+}
+
+.login-page-form-input {
+  width: 70%;
+  padding: 1.3em;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+}
+
+.login-page-form-password {
+  margin-top: 1.5em;
+}
+
+.login-page-usable-btn {
+  margin-top: 1em;
+  background-color: var(--light-blue);
+  width: 78%;
+  padding: 0.8em;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-transition: var(--default-btn-hover-transition);
+  transition: var(--default-btn-hover-transition);
+}
+
+.login-page-usable-btn:hover {
+  background-color: var(--darker-light-blue);
+}
+
+.login-page-unusable-btn {
+  margin-top: 1em;
+  background-color: var(--disabled-light-blue);
+  width: 78%;
+  padding: 0.8em;
+  border-radius: 2.5rem;
+  border: none;
+  color: var(--disabled-white-text-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.login-page-help-texts-container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.login-page-help-texts-container-text {
+  cursor: pointer;
+  color: var(--darker-light-blue);
+  font-size: 0.8rem;
+}
+
+.login-page-help-texts-container-text:hover {
+  text-decoration: underline;
+}
+
 :root {
+  --disabled-white-text-color:#F9F9F9;
+  --disabled-light-blue:#97DEFC;
   --light-blue:#00acee;
   --darker-light-blue:#009BDE;
   --open-sans-family: 'Open Sans', sans-serif;
-  --default-btn-hover-transition: 'all 1s ease-out';
+  --default-btn-hover-transition: all 0.15s ease-in-out;
 }
 
 body {

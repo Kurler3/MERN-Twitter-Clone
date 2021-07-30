@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const uri = require('./config/keys_dev').uri;
-const { MongoClient } = require('mongodb');
 
 // Import Routes
 const users = require('./routes/api/users');

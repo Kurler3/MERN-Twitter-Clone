@@ -1,0 +1,86 @@
+.login-page {
+    height: 100vh;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--open-sans-family);
+    
+
+    &-twitter-icon{
+        color: var(--light-blue);
+        font-size: 2.5rem;
+        margin-top: 0.7em;
+    }
+
+    &-main-title {
+        margin-top: 1em;
+    }
+
+    &-form{
+        margin-top: 0.5em;
+        padding: 1em 0;
+        
+        &-input {
+            width: 70%;
+            padding: 1.3em;
+            border-radius: 0.3rem;
+            border: 1px solid grey;
+        }
+
+        &-email{
+            
+        }
+
+        &-password{
+            margin-top: 1.5em;
+        }
+    }
+
+    &-usable-btn {
+        margin-top: 1em;
+        background-color: var(--light-blue);
+        width: 78%;
+        padding: 0.8em;
+        cursor: pointer;
+        border-radius: 2.5rem;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: var(--default-btn-hover-transition);
+
+        &:hover {
+            background-color: var(--darker-light-blue);
+        }
+    }
+
+    &-unusable-btn {
+        margin-top: 1em;
+        background-color: var(--disabled-light-blue);
+        width: 78%;
+        padding: 0.8em;
+        border-radius: 2.5rem;
+        border: none;
+        color: var(--disabled-white-text-color);
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    &-help-texts-container{
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        width: 80%;
+
+        &-text {
+            cursor: pointer;
+            color: var(--darker-light-blue);
+            font-size: 0.8rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

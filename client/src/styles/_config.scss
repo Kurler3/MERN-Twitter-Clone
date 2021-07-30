@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
+    --disabled-white-text-color:#F9F9F9;
+    --disabled-light-blue:#97DEFC;
     --light-blue:#00acee;
     --darker-light-blue:#009BDE;
     --open-sans-family: 'Open Sans', sans-serif;
-    --default-btn-hover-transition: 'all 1s ease-out';
+    --default-btn-hover-transition: all 0.15s ease-in-out;
 }
